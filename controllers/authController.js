@@ -71,7 +71,7 @@ const createuser=async (req, res) => {
            id: user._id
          }
        }
-       const authtoken = jwt.sign(data, procss.env.JWT_SECRET);
+       const authtoken = jwt.sign(data, process.env.JWT_SECRET);
        console.log(authtoken);
        res.json({ authtoken });
     }
